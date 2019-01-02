@@ -1,4 +1,8 @@
 class PicturesController < ApplicationController
+    def index
+        
+    end
+
     def create
         @picture = Picture.create(picture_params)
     end

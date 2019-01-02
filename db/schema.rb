@@ -13,6 +13,8 @@
 ActiveRecord::Schema.define(version: 2019_01_01_205052) do
 
   create_table "picture_tags", force: :cascade do |t|
+    t.integer "picture_id"
+    t.integer "tag_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
